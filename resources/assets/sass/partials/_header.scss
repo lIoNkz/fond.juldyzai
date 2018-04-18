@@ -1,251 +1,60 @@
-.topline {
+header {
 	width: 100%;
-	height: 45px;
-	line-height: 45px;
-	background-color: #1f2d30;
-	text-transform: uppercase;
-	font-size: 16px;
-	div {
-		float: right;
-		padding-right: 25px;
+}
+
+
+#socialLinks {
+	height: 73px;
+	.col-4 {
+		height: 100%;
+		padding: 0;
+		overflow: hidden;
 		a {
-			color: #fff;
+			img {
+				width: 100%;
+			}
 		}
 	}
+}
+
+#banner {
+	height: 310px;
+	position: relative;
+	img {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 100%;
+	}
+	.logo {
+		position: absolute;
+		height: 20%;
+		top: 32%;
+    	left: 28%;
+	}
 	p {
-		float: right;
-		padding-right: 55px;
+		font-size: 2.5em;
+		position: absolute;
+		top: 35%;
+    	width: 30%;
+    	left: 53%;
+    	line-height: 1em;
 	}
 }
 
-.menu {
-	width: 100%;
-	height: 130px;
-}
-
-.menu-container {
-	width: 1200px;
-	height: 100%;
-	margin: 0 auto;
-}
-
-.logo {
-	float: left;
-	height: 100%;
+#menu {
+	height: 73px;
 	a {
 		display: block;
+		width: 25%;
 		height: 100%;
-		line-height: 130px;
-		img {
-			width: 180px;
-			vertical-align: middle;
-		}
+		line-height: 77px;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 1.4em;
+		&:nth-child(1){background-color: #fff}
+		&:nth-child(2){background-color: #eef4f4}
+		&:nth-child(3){background-color: #b0e0c8}
+		&:nth-child(4){background-color: #f48f8f}
 	}
-}
-
-#nav {
-	height: 100%;
-	width: 840px;
-	float: left; 
-	text-align: center;
-	ul {
-		list-style-type: none;
-		height: 100%;
-		margin: 0 auto;
-		li {
-			display: inline-block;
-			margin: 0 auto;
-			width: 80px;
-			padding: 0 10px;
-			text-transform: uppercase;
-			line-height: 130px;
-		}
-	}
-}
-
-#search {
-	float: right;
-	@include flex();
-	align-items: center;
-	width: 180px;
-	height: 100%;
-	input{
-		color: #000;
-		width: 180px;
-		border: none;
-		border-bottom: 2px solid #ccc;
-		outline: none;
-		height: 25px;
-	}
-}
-// NEXT MEDIA QUERY NEXT MEDIA QUERY NEXT MEDIA QUERY NEXT MEDIA QUERY 
-@media only screen
-and(min-width: 1024px)
-and(max-width: 1279px){
-.topline {
-	font-size: 16px;
-	div {
-		padding-right: 25px;
-		a {}
-	}
-	p {
-		padding-right: 55px;
-	}
-}
-
-.menu {}
-
-.menu-container {
-	width: 960px;
-}
-
-.logo {
-	width: 100px;
-	a {
-		line-height: 130px;
-		img {
-			width: 100%;
-		}
-	}
-}
-
-#nav {
-	margin-top: -15px;
-	width: 720px;
-	ul {
-		li {
-			width: 80px;
-			padding: 0 10px;
-			line-height: 130px;
-		}
-	}
-}
-
-#search {
-	margin-top: -15px;
-	width: 140px;
-	input{
-		width: 100%;
-		border-bottom: 2px solid #ccc;
-		height: 25px;
-	}
-}
-
-}
-// NEXT MEDIA QUERY NEXT MEDIA QUERY NEXT MEDIA QUERY NEXT MEDIA QUERY 
-@media only screen
-and(min-width: 1280px)
-and(max-width: 1365px){
-.topline {
-	font-size: 16px;
-	div {
-		padding-right: 25px;
-		a {}
-	}
-	p {
-		padding-right: 55px;
-	}
-}
-
-.menu {}
-
-.menu-container {
-	width: 1200px;
-}
-
-.logo {
-	a {
-		line-height: 130px;
-		img {
-			width: 180px;
-		}
-	}
-}
-
-#nav {
-	margin-top: 0;
-	width: 840px;
-	ul {
-		li {
-			width: 80px;
-			padding: 0 10px;
-			line-height: 130px;
-		}
-	}
-}
-
-#search {
-	margin-top: -15px;
-	width: 180px;
-	input{
-		width: 180px;
-		border-bottom: 2px solid #ccc;
-		height: 25px;
-	}
-}
-
-}
-// NEXT MEDIA QUERY NEXT MEDIA QUERY NEXT MEDIA QUERY NEXT MEDIA QUERY 
-@media only screen
-and(min-width: 1366px)
-and(max-width: 1439px){
-.topline {
-	font-size: 16px;
-	div {
-		padding-right: 25px;
-		a {}
-	}
-	p {
-		padding-right: 55px;
-	}
-}
-
-.menu {}
-
-.menu-container {
-	width: 1200px;
-}
-
-.logo {
-	a {
-		line-height: 130px;
-		img {
-			width: 180px;
-		}
-	}
-}
-
-#nav {
-	margin-top: -15px;
-	width: 840px;
-	ul {
-		li {
-			width: 80px;
-			padding: 0 10px;
-			line-height: 130px;
-		}
-	}
-}
-
-#search {
-	margin-top: -15px;
-	width: 180px;
-	input{
-		width: 180px;
-		border-bottom: 2px solid #ccc;
-		height: 25px;
-	}
-}
-	
-}
-// NEXT MEDIA QUERY NEXT MEDIA QUERY NEXT MEDIA QUERY NEXT MEDIA QUERY 
-@media only screen
-and(min-width: 1920px) {
-#nav {
-	margin-top: 0px;
-}
-#search {
-	margin-top: 0;
-}
-
 }
