@@ -9,7 +9,8 @@
 				<a href="#">Сделать пожертвование</a>
 			</div>
 		</div>
-		<div class="col-6"></div>
+		<div class="col-6">
+		</div>
 	</div>
 
 	<h3>Проекты</h3>
@@ -64,9 +65,35 @@
 				<h3>Фотогалерея</h3>
 				<p>Фотоархив всех событий</p>
 			</div>
-			<div class="gallerySlider">
-				
+			<div class="gallery">
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				  <ol class="carousel-indicators">
+				    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				  </ol>
+				  <div class="carousel-inner" role="listbox">
+				    <div class="carousel-item active">
+				      <img class="d-block img-fluid" src="/img/index/slider-1.jpg" alt="First slide">
+				    </div>
+				    <div class="carousel-item">
+				      <img class="d-block img-fluid" src="/img/index/slider-1.jpg" alt="Second slide">
+				    </div>
+				    <div class="carousel-item">
+				      <img class="d-block img-fluid" src="/img/index/slider-1.jpg" alt="Third slide">
+				    </div>
+				  </div>
+				  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>		
 			</div>
+
 		</div>
 
 		<div class="col-4">
@@ -156,12 +183,15 @@
 		<a href="#all-stories">Все истории</a>
 	</div>
 	<h3>Партнеры фонда</h3>
-	<div class="row" id="partners">
-		<div class="col-2"></div>
-		<div class="col-2"></div>
-		<div class="col-2"></div>
-		<div class="col-2"></div>
+	<div id="partners">
+		<div class="owl-carousel owl-theme partners">
+		    <div class="item"><h4>1</h4></div>
+		    <div class="item"><h4>2</h4></div>
+		    <div class="item"><h4>3</h4></div>
+		    <div class="item"><h4>4</h4></div>
+		</div>
 	</div>
+
 
 </div> <!-- container div -->
 

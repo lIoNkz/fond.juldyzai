@@ -1,0 +1,1 @@
+$(".partners").owlCarousel({loop:!0,margin:10,nav:!0,responsive:{0:{items:4}},autoplay:!0,autoplayTimeout:5e3,autoplayHoverPause:!0});

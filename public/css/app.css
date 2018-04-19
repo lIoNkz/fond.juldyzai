@@ -6395,9 +6395,9 @@ main .container #youtubeAndNews {
   height: 310px;
   justify-content: space-between; }
   #slider .col-6 {
-    height: 100%; }
+    height: 100%;
+    padding: 0; }
     #slider .col-6:nth-child(1) {
-      padding: 0;
       flex: 0 0 49%;
       background-image: url(../img/index/children.jpg);
       background-position: center center; }
@@ -6523,12 +6523,20 @@ main .container #youtubeAndNews {
       #mainBlock > .col-6 .galleryText p {
         text-align: center;
         width: 100%; }
-    #mainBlock > .col-6 .gallerySlider {
+    #mainBlock > .col-6 .gallery {
       width: 100%;
-      height: 300px;
-      background-color: lime;
-      background-image: url(../img/index/slider-1.jpg);
-      background-size: cover; }
+      height: 300px; }
+      #mainBlock > .col-6 .gallery .carousel-indicators {
+        left: -54px;
+        bottom: 0;
+        right: unset; }
+        #mainBlock > .col-6 .gallery .carousel-indicators li {
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          border-radius: 10px;
+          width: 10px;
+          height: 10px; }
   #mainBlock .col-4 {
     min-height: 100%; }
     #mainBlock .col-4 .row {
@@ -6683,12 +6691,14 @@ main .container #youtubeAndNews {
     text-decoration: underline; }
 
 #partners {
-  min-height: 150px;
-  justify-content: center; }
-  #partners .col-2 {
-    height: 70px;
-    margin: 0 2%;
-    background-color: #eee; }
+  width: 80%;
+  margin: 0 auto; }
+  #partners .owl-carousel {
+    min-height: 150px; }
+    #partners .owl-carousel .item {
+      height: 80px;
+      margin: 0 2%;
+      background-color: #eee; }
 
 footer {
   width: 100%; }
