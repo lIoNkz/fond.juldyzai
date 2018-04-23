@@ -10,9 +10,19 @@
 			</div>
 		</div>
 		<div class="col-6">
+			<div class="my-item">0</div>
+			<div class="my-item">1</div>
+			<div class="my-item">2</div>
+			<div class="my-item">3</div>
+		</div>
+		<div id="scroll-bar-wrap">
+			<div id="point-1" class="points"></div>
+			<div id="point-2" class="points"></div>
+			<div id="point-3" class="points"></div>
+			<div id="point-4" class="points"></div>
+			<div id="scroll-bar"  class="ui-widget-content"></div>
 		</div>
 	</div>
-
 	<h3>Проекты</h3>
 
 	<div class="row" id="projects">
